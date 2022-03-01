@@ -3,9 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>About</title>
 
 </head>
@@ -19,23 +23,24 @@
           <source srcset="img/soma/homescreen/logo_low.png" media="(max-width:767px)">
           <img src="img/soma/homescreen/logo_high.png" alt="Portfolio.">
         </picture>
-        <nav>
-          <ul>
-            <li><a href="index.html">Projects</a></li>
-            <li><a href="files/cv.pdf" target="_blank" download>CV</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact">Contact</a></li>
-          </ul>
-        </nav>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="files/cv.pdf" target="_blank" download>CV</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <div style="background-color:orange; padding:15px;">
+    <div>
 
-      <div id="yellow">
+      <div>
 
-        <h1 id="who-am-i-black">Who am I?</h1>
+        <h1>Who am I?</h1>
 
         <picture>
           <source srcset="img/me_600.jpg" media="(max-width:767px)">
@@ -43,24 +48,25 @@
         </picture>
 
 
-        <div id="my-story-and-skills">
+        <div>
 
 
 
-          <div id="my-story">
+          <div>
 
-            <h2 id="story-skills-title">My story</h2>
-            <p id="paragraph">
+            <h2>My story</h2>
+            <p>
               I am an ambitious designer, currently experimenting with experiences that elevates the connection between humans and technology. I am interested in the idea of people owned internet and as a UX designer and tech for good
               advocate, I hope to build user experiences that are meaningful and have a social impact.
-            <ul id="paragraph">
+            <ul>
               <li>Creativity</li>
               <li>Team-player</li>
               <li>Critical thinking</li>
               <li>Curiosity</li>
             </ul>
             </p>
-            <a id="lets-chat" href="mailto:domouchtsidisgeo@gmail.com" target="_blank">Let's chat!</a>
+            <a id="lets-chat" href="mailto:domouchtsidisgeo@gmail.com" class="button contact">Let's chat!
+            </a>
 
 
           </div>
@@ -70,17 +76,17 @@
 
 
 
-          <div id="skills-and-tech">
+          <div>
 
             <div>
-              <h2 id="story-skills-title">Skills and Tech-stack</h2>
+              <h2>Skills and Tech-stack</h2>
             </div>
 
 
             <div>
 
               <h3>Skills</h3>
-              <ul id="paragraph">
+              <ul>
                 <li>Researcher</li>
                 <li>UX designer</li>
                 <li>Visual designer</li>
@@ -94,7 +100,7 @@
             <div>
 
               <h3>Tech-stack</h3>
-              <ul id="paragraph">
+              <ul>
                 <li>Figma</li>
                 <li>Sketch</li>
                 <li>Zeplin</li>
@@ -118,10 +124,10 @@
 
   <footer>
     <div>
-      <h2>Hit me up if you want to connect and share ideas! :)</h2>
+      <h3>Hit me up if you want to connect and share ideas! :)</h3>
       <div>
         <!--There is a problem here, I don't know where tho hehe. It has something to do with the links maybe?-->
-        <a href="mailto:domouchtsidisgeo@gmail.com" target="_blank">Send me an email</a>
+        <a href="mailto:domouchtsidisgeo@gmail.com" class="button contact" target="_blank">Contact</a>
       </div>
       <p>or</p>
       <div>
