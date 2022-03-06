@@ -11,7 +11,8 @@ header {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to bottom right, #FDE4E4, #FFB2B4);
+  background-image: url("background.png"), linear-gradient(to bottom right, #FDDEDF, #FFB2B4);
+  margin: 0;
   font-size: 16px;
   font-weight: 200;
   line-height: 1.6;
@@ -26,23 +27,54 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 600;
+  text-align: left;
 }
 
 h2 {
+  margin: auto;
   font-size: 1.5em;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 400;
+  margin: 40px 10px 0px 10px;
+  padding: 15px 15px 5px 15px;
+  text-align: center;
 }
 
 h4 {
   font-size: 1em;
   font-weight: 200;
+}
+
+h5 {
+  font-size: 1.1em;
+  font-weight: 400;
+  text-align: left;
+}
+
+#title {
+  margin-bottom: 3px;
+  margin-left: 50px;
+}
+
+#herodescription {
+  position: relative;
+  width: 280px;
+  height: 80px;
+  text-align: left;
+  margin-left: 98px;
+  margin-top: 20px
+}
+
+#scrolldown {
+  margin-top: 30px;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -96,12 +128,13 @@ a:active {
   display: inline-block;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   background: linear-gradient(254.15deg, #8468F5 9.31%, #EC74E7 117.17%);
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
   color: #ffffff;
-  padding: 10px 30px;
-  border-radius: 30px;
+  padding: 12px 14px 13px 12px;
+  height: 50px;
+  width: 50px;
+  border-radius: 60%;
 }
 
 .button.contact:hover .button:focus {
@@ -114,18 +147,15 @@ a:active {
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.35);
 }
 
-#somabackground {
-  background-color: white;
-  color: #193441;
-}
-
 /*Styling layout*/
 .container {
-  padding: 0 15px;
+  padding: 10px;
 }
 
 .row {
-  margin: 25px 0;
+  width: 100%;
+  margin: 10px 0 25px 0;
+  border-bottom: 1px solid #4a4a4a;
 }
 
 #work .row {
@@ -133,8 +163,13 @@ a:active {
   border-bottom: 1px solid #4a4a4a;
 }
 
+img.pic {
+  box-shadow: 0px 2px 19px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
 #hero {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
   display: inline-block;
   width: 100%;
 }
@@ -153,36 +188,189 @@ nav {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: #8468F5;
   font-weight: 500;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   color: #8468F5;
   font-weight: 500;
+}
+
+ul.footer {
+  margin-left: 95px;
+}
+
+.bottom {
+  margin-left: 85px;
 }
 
 .footer {
   list-style-type: none;
-  margin: 0;
+  padding-left: 0;
 }
 
-footer > ul > li > {
+.footer li {
+  vertical-align: bottom;
   display: inline-block;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.footer li a {
+  margin: 0;
+  padding: 0;
+}
+
+.footer li svg {
+  vertical-align: bottom;
+  height: 50px;
+  width: auto
+}
+
+/*about page*/
+.containerabout {
+  padding: 10px;
+}
+
+#mystory {
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  right: 165px;
+  top: 350px;
+  transform: rotate(-90deg);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 104.5%;
+}
+
+#mystory2 {
+  margin-left: 30px;
+  width: 80%;
+  left: 70px;
+  top: 15px;
+}
+
+.mystory1 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 30px;
+  text-align: center;
+}
+
+.mystory1 li {
+  display: inline-block;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box1 {
+  height: 420px;
+  left: 54px;
+  top: 382px;
+  background: rgba(255, 192, 194, 0.64);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+div.box1 {
+  margin-left: 70px;
+}
+
+.profilepic img {
+  box-shadow: 0px 4px 19px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.skills {
+  margin-left: 70px;
+}
+
+.skills1 {
+  margin-left: 25px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+div.box3 {
+  width: 100%;
+  margin: 30px 0;
+  height: 210px;
+  left: 54px;
+  top: 382px;
+  background: rgba(255, 192, 194, 0.64);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+div.box2 {
+width: 100%;
+height: 230px;
+left: 54px;
+top: 382px;
+background: rgba(255, 192, 194, 0.64);
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 20px;
+}
+
+.tech1 {
+  margin-left: 25px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+main ul li {
+  list-style-type: none;
+}
+
+
+/*SOMA CASE STUDY*/
+
+.containersoma {
+  background-color: white;
+  color: #193441;
+  padding: 10px;
+}
+
+.iterations {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+/*.col-md-6 {
+  float: left;
+  width: 43%;
+}
+
+div.col-md-6 {
+  margin-right: 30px;
+}*/
+
+.top {
+  margin: 45px 0 45px 0;
+  padding: 10px 0 10px 0;
 }
