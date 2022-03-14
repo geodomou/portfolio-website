@@ -15,24 +15,21 @@
 
 <body>
   <header>
-    <div>
-      <div>
+        <nav>
       <a href="index.html">
         <picture>
           <source srcset="img/soma/homescreen/logo_low.png" media="(max-width:767px)">
           <img class="logo" src="img/soma/homescreen/logo_high.png" alt="Portfolio.">
         </picture>
       </a>
-      </div>
-      <nav>
-        <ul class="navigation">
+
+        <ul>
           <li><a href="index.html">Projects</a></li>
           <li><a href="files/cv.pdf" target="_blank" download>CV</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="contact" class="styledbutton">Contact<img class="planesvg" src="img/plane.svg"></a>
         </ul>
       </nav>
-    </div>
   </header>
 
   <main class="containersoma">
@@ -51,9 +48,9 @@
 
 
       <!--OVERVIEW & PROBLEM START-->
-      <div class="top">
+      <div id="overview-problem-wrapper" class="top">
 
-        <div class="col-md-6">
+        <div>
           <h2>Overview</h2>
           <p>Case study for the Responsive Web app of SOMA (translates to body).
             A healthcare concept app I designed during my study at CareerFoundry.
@@ -69,6 +66,8 @@
 
       </div>
       <!--OVERVIEW & PROBLEM END-->
+
+<div class="ctn">
 
 
       <!--UCD PROCESS START-->
@@ -92,13 +91,14 @@
       <!--DISCOVER START-->
       <div class="top">
 
-        <h2> Discover</h2>
+
 
 
         <!--Competitor analysis-->
         <div>
 
-          <div>
+          <div id="competitor-analysis-wrapper">
+            <h1> Discover</h1>
             <h5>Competitor analysis</h5>
             <p>Ada ( 10.000.000 downloads ) and avey ( 500.000 downloads ) were my main focus for the research based on their user base and features.
               Started by getting to know the key competitors in the market, to get an idea of users' expectations and painpoint opportunities to meet their unfulfilled needs.
@@ -116,7 +116,7 @@
 
 
         <!--Research design-->
-        <div>
+        <div id="text-wrapper">
           <h5>Research design</h5>
           <p>I was prepared by creating an interview script and over 14 questions to acquire my qualitative data. At the same time I published my surveys receiving quantitative data.</p>
         </div>
@@ -131,7 +131,7 @@
       <!--DEFINE START-->
       <div class="top">
 
-        <h2>Define</h2>
+
 
         <div>
 
@@ -139,7 +139,8 @@
           <!--Interviews and surveys-->
           <div>
 
-            <div>
+            <div id="title-text-wrapper">
+              <h1>Define</h1>
               <h5>Interviews and surveys</h5>
               <p>After some very insightful series of interviews ( 5 ) and surveys with potential users, I was able to extract and cluster vital information to continue my research.
                 Below, you can see some outcomes from those sessions.</p>
@@ -158,7 +159,7 @@
           <!--Personas-->
           <div>
 
-            <div>
+            <div id="text-wrapper">
               <h5>Personas</h5>
               <p>Using findings from the interviews, I created the following personas to better understand the target audience.</p>
             </div>
@@ -176,7 +177,7 @@
           <!--User journey map-->
           <div>
 
-            <div>
+            <div id="ujm-wrapper">
               <h5>User journey map</h5>
               <p>The map was to establish the thoughts of potential users and see where opportunities occur.</p>
             </div>
@@ -194,7 +195,7 @@
           <!--User flow-->
           <div>
 
-            <div>
+            <div id="user-flow-wrapper">
               <h5>User flow</h5>
               <p>One of the main user-flows from Ivie's perspective.
               </p>
@@ -213,7 +214,7 @@
           <!--Sitemap-->
           <div>
 
-            <div>
+            <div id="sitemap-wrapper">
               <h5>Sitemap</h5>
               <p>After some card sorting sessions, I ended up with the following sitemap for the structure of the web app.
               </p>
@@ -240,13 +241,13 @@
 
       <!--DEVELOP START-->
       <div class="top">
-        <h2>Develop</h2>
 
 
         <!--Draft sketches & wireframes-->
         <div>
 
-          <div>
+          <div id="title-text-wrapper">
+            <h1>Develop</h1>
             <h5>Draft sketches & Wireframes</h5>
             <p>I grabbed my pencil and notebook and started conceptualizing my ideas, drawing the skeleton of the app.
               I could quickly and inexpensively reshape everything until I achieved the desired usability for the app before any further development efforts took place.
@@ -266,7 +267,7 @@
         <!--Wireframe evolution-->
         <div class="top">
 
-          <div>
+          <div id="text-wrapper">
             <h5>Wireframe evolution</h5>
             <p>Low, mid and high fidelity, showcasing the user-centered responsive design progression.
             </p>
@@ -291,12 +292,12 @@
       <!--PROTOTYPE & TESTING START-->
       <div class="top">
 
-        <h2>Prototype & Testing</h2>
 
 
         <!--User testing, analyse results and iterate-->
         <div>
-          <div>
+          <div id="title-text-wrapper">
+            <h1>Prototype & Testing</h1>
             <h5>User testings, analyse results, iterate - REPEAT</h5>
             <p>The above illustration shows the progression of the product after following user data received from guerrilla tests( 2 participants ), moderated tests( 6 participants ) and A/B tests( 9 tests ).
               <br>
@@ -315,13 +316,13 @@
         </div>
 
         <div>
-
+<div id="text-wrapper">
           <h5>#Decisionstaken</h5>
           <p>Throughout the whole design process, my focus was to improve the usablity and experience of people using the app.</p>
-
+</div>
           <div class="row">
 
-            <div>
+            <div id="text-wrapper">
               <h4><b>Introduction</b></h4>
               <p>Moved “Log in” and “Sign up” buttons lower. Made it clear what’s clickable and moved everything in the thumb zone of the user.</p>
             </div>
@@ -338,7 +339,7 @@
 
           <div class="row">
 
-            <div>
+            <div id="text-wrapper">
               <h4><b>Homescreen/Dashboard</b></h4>
               <p>Visual hierarchy and reduction of cognitive load for the user was the focus in these screens. You can see the changes are significant.</p>
             </div>
@@ -353,9 +354,9 @@
           </div>
 
 
-          <div class="row">
+          <div class="row" class="line">
 
-            <div>
+            <div id="text-wrapper">
               <h4><b>Diagnosis screen</b></h4>
               <p>Visual hierarchy and unity elevate the experience of this screen. After numerous iterations, I designed the information presented in a logical way for people using the app.</p>
             </div>
@@ -387,13 +388,14 @@
       <!--DESIGN START-->
       <div class="top">
 
-        <h2>Design</h2>
+
 
         <div>
 
 
           <!--Language system-->
-          <div>
+          <div id="title-text-wrapper">
+            <h1>Design</h1>
             <h5>Design language system</h5>
             <p>The voice of SOMA needs to be personal to give the feeling of a conversation with an actual person, but also in a professional level since it’s a health related product.
               Try not to use complicated health jargon but be very specific with the names of diverse conditions.
@@ -402,7 +404,7 @@
 
 
           <!--Colors-->
-          <div>
+          <div id="text-wrapper">
             <h5>Colors</h5>
 
             <div>
@@ -416,7 +418,7 @@
 
 
           <!--Typography-->
-          <div>
+          <div id="text-wrapper">
             <h5>Typography</h5>
 
             <div>
@@ -430,7 +432,7 @@
 
 
           <!--Iconography-->
-          <div>
+          <div id="text-wrapper">
             <h5>Iconography</h5>
 
             <div>
@@ -452,8 +454,8 @@
 
 
       <!--SOLUTION START-->
-      <div class="top">
-        <h2>Solution</h2>
+      <div id="solution-wrapper" class="top">
+        <h1>Solution</h1>
         <p>SOMA has focused on establishing features that will allow users to get diagnosed efficiently by an A.I. driven bot while it asks specific questions depending on the symptoms users have inputted.
           After the “questionnaire” users will receive a diagnosis, allowing them to get answers and possible next steps to any of their conditions.
           The option to follow up with a real doctor via video call, for a more intensive diagnosis, will be available for a fee, making the experience more reliable and stress-free to users.
@@ -466,8 +468,8 @@
 
 
       <!--FINAL DESIGNS START-->
-      <div class="top">
-        <h2>Final designs</h2>
+      <div id="title-text-wrapper" class="top">
+        <h1>Final designs</h1>
 
         <div>
           <picture>
@@ -487,11 +489,12 @@
 
       <!--DELIVER START-->
       <div class="top">
-        <h2>Deliver</h2>
+
 
 
         <!--New hypothesis-->
-        <div>
+        <div id="title-text-wrapper">
+          <h1>Deliver</h1>
           <h5>New hypothesis</h5>
           <p>On a higher-level, I would like to start looking on the doctor’s perspective as well. One of my future goals for the app is to create another hypothesis and build the interface doctors will use while using SOMA.
             It’s an important aspect of the UX design process to look not only the “typical” user’s side but also the professional’s side.
@@ -500,7 +503,7 @@
 
 
         <!--Learnings-->
-        <div>
+        <div id="text-wrapper">
           <h5>Learnings</h5>
 
           <div>
@@ -520,19 +523,19 @@
       <div>
 
         <h3>WOW THANK YOU FOR READING!</h3>
-        <p style="text-align: center;">P.S. check the clickable prototype below...</p>
+        <p style="text-align: center; padding: 0 5px;">P.S. check the clickable prototype below...<br>(use desktop for best experience)</p>
 
-        <div>
+        <div id="love">
           <picture>
             <source srcset="img/soma/soma_assets/love_low.png" media="(max-width:767px)">
-            <img style="padding: 0 160px 0 160px;"src="img/soma/soma_assets/love_high.png" alt="Love">
+            <img src="img/soma/soma_assets/love_high.png" alt="Love">
           </picture>
         </div>
 
         <br>
 
-        <div>
-          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="355" height="450"
+        <div id="prototype-wrapper">
+          <iframe style="border: 2px solid rgba(0, 0, 0, 0.1);" width="355" height="812"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FS6tyxads5aBPQ500ddyDPI%2FHigh-Fidelity-Prototype%3Fpage-id%3D869%253A16802%26node-id%3D869%253A20370%26viewport%3D241%252C48%252C0.03%26scaling%3Dscale-down%26starting-point-node-id%3D869%253A20395%26show-proto-sidebar%3D1"
             allowfullscreen></iframe>
         </div>
@@ -540,12 +543,12 @@
       </div>
 
     </div>
-
+</div>
 
   </main>
 
   <footer class="containerfooter">
-    <div class="container">
+    <div>
       <h3>Hit me up if you want to connect and share ideas! :)</h3>
       <div>
         <ul class="footer">
