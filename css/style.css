@@ -5,7 +5,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-image: url("background.png"), linear-gradient(to bottom right, #FDDEDF, #FFB2B4);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
   margin: 0;
   font-size: 16px;
@@ -94,6 +94,10 @@ a:focus {
 
 a:active {
   color: #895152;
+}
+
+#styledbutton {
+  color: #ffffff;
 }
 
 .planesvg {
@@ -478,7 +482,7 @@ Medium devices (640px and larger)
     padding: 0 20px;
   }
 
-  .styledbutton {
+  #styledbutton {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -492,13 +496,13 @@ Medium devices (640px and larger)
     transition: 0.3s opacity;
   }
 
-  .styledbutton:hover {
+  #styledbutton:hover {
     opacity: 0.8;
     color: #ffffff;
     font-weight: 400;
   }
 
-  .styledbutton:active {
+  #styledbutton:active {
     opacity: 1.2;
     background-color: #ffffff;
     color: #ffffff;
@@ -648,7 +652,7 @@ Large devices (1024px or larger)
   }
 
   .projectcontainer {
-    padding: 0 180px;
+    padding: 0 300px;
   }
 
   #mystory {
@@ -660,7 +664,8 @@ Large devices (1024px or larger)
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 15px 170px 15px 170px;
+    padding: 15px 300px 15px 300px;
+    font-size: 16px;
   }
 
   #overview-problem-wrapper {
@@ -740,7 +745,7 @@ nav > ul > li > a {
   max-width: 170px;
 }
 
-.styledbutton {
+#styledbutton {
   padding: 10px 20px;
   font-size: 20px;
 }
