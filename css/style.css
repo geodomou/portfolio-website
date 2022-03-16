@@ -22,6 +22,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+  color: #1F1F1F;
   font-size: 1.8em;
   font-weight: 600;
   text-align: left;
@@ -41,6 +42,7 @@ h3 {
 }
 
 h4 {
+  color: #1F1F1F;
   font-size: 1em;
   font-weight: 200;
 }
@@ -49,6 +51,15 @@ h5 {
   font-size: 1.1em;
   font-weight: 400;
   text-align: left;
+}
+
+#navigationcenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+
 }
 
 #title {
@@ -60,8 +71,8 @@ h5 {
   text-align: center;
   width: 100%;
   padding: 0 20px;
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 120px;
 }
 
 #scrolldown {
@@ -72,6 +83,75 @@ h5 {
   font-size: 16px;
 }
 
+.scroll-downn {
+position: absolute;
+top: 18rem;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.mouse {
+  width: 1.5rem;
+  height: 3rem;
+  border: 2px solid #000000;
+  border-radius: 2rem;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.mouse span {
+  width: .5rem;
+  height: .5rem;
+  background-color: #000000;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  animation: move-wheel 1.2s linear infinite;
+}
+
+.arrow span {
+  display: block;
+  width: .5rem;
+  height: .5rem;
+  border: 2px solid transparent;
+  border-right-color: #000000;
+  border-bottom-color: #000000;
+  transform: rotate(45deg);
+  animation: arrow-down .6s alternate infinite;
+}
+
+@keyframes move-wheel {
+  0%{
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(1rem);
+  }
+}
+
+@keyframes arrow-down {
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: .25;
+  }
+  50%{
+    opacity: .5;
+  }
+  75%{
+    opacity: .75;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 span {
   font-size: 1em;
   text-align: center;
@@ -79,6 +159,8 @@ span {
 
 a {
   color: #000000;
+  font-weight: 400;
+  font-size: 1.4em;
   text-decoration: none;
 }
 
@@ -97,11 +179,23 @@ a:active {
 }
 
 #styledbutton {
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: #ffffff;
+  background: linear-gradient(254.15deg, #8468F5 9.31%, #EC74E7 117.17%);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  transition: 0.3s opacity;
+  min-width: 112px;
 }
 
 .planesvg {
-  display: none;
+
   margin-left: 10px;
   height: 15px;
 }
@@ -116,8 +210,8 @@ a:active {
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
   color: #000000;
   font-weight: 400;
-  font-size: 14px;
-  padding: 8px 16px;
+  font-size: 12px;
+  padding: 6px 12px;
   border-radius: 30px;
   transition: 0.2s opacity;
 }
@@ -199,6 +293,7 @@ a:active {
 
 #work {
   padding: 20px;
+  margin-top: 10px
 }
 
 #work .row {
@@ -212,7 +307,7 @@ img.pic {
 }
 
 #hero {
-  padding: 20px 0 10px 0;
+  padding: 0px 0 10px 0;
   display: inline-block;
   width: 100%;
 }
@@ -222,10 +317,46 @@ img.pic {
 }
 
 .logo {
-  max-width: 120px;
-  padding-left: 10px;
-  text-align: left;
+  max-width: 100px;
+  top: 5%;
+  left: 5%;
 }
+
+
+/*
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 23px;
+  padding-right: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+*/
 
 .projects {
   position: fixed;
@@ -238,17 +369,38 @@ img.pic {
   font-weight: 600;
   font-size: 40px;
   line-height: 104.5%;
+  color: #1F1F1F;
 }
 
+/*
 nav {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
+  height: 10vh;
   padding: 10px;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: (0, 0, 0);
   z-index: -2;
+}*/
+
+nav {
+  height: 10vh;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 100%;
+  width: 50%;
+}
+
+#nav-links-wrapper {
+  display:flex;
+  flex-direction: row;
+  column-gap:30px;
 }
 
 nav>ul {
@@ -286,6 +438,7 @@ ul.footer {
 
 .bottom {
   text-align: center;
+  font-size: 16px;
 }
 
 .footer {
@@ -466,20 +619,132 @@ padding: 0 150px 0 150px;
 
 
 /* ========= SCREEN SIZES ========= */
+@media only screen and (max-width: 639px) {
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: black;
+  margin: 5px;
+  border-radius: 50px;
+}
+
+nav {
+  position: relative;
+}
+
+#nav-links-wrapper {
+  display:flex;
+  flex-direction: column;
+  row-gap:40px;
+  align-items: center;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  z-index: 20;
+}
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #FAC9CA;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 0.7s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open{
+    clip-path: circle(600px at 90% -10%);
+    -webkit-clip-path: circle(600px at 90% -20%);
+    pointer-events: all;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.3s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(4) {
+    transition: all 0.5s ease 0.5s;
+  }
+
+  li.fade{
+    opacity: 1;
+  }
+
+}
+
+
+
+
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+/*
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+*/
+a {
+  font-size: 1em;
+}
+
+.nav-links {
+  pointer-events: all !important;
+}
+
   nav {
+    display: flex;
     flex-direction: row;
+    gap: 30px;
     justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
     box-shadow: 0px 0px 0px;
-    padding: 20px 30px 20px 30px;
+    padding: 0px 20px 10px 20px;
   }
 
   nav>ul>li>a {
     text-transform: none;
     padding: 0 20px;
+  }
+
+  .logo {
+    max-width: 120px;
+    padding-left: 10px;
+    top: 1%;
+    text-align: left;
   }
 
   #styledbutton {
@@ -521,17 +786,10 @@ Medium devices (640px and larger)
       z-index:-1;
   }
 
-  #hero {
-    padding-top: 40px;
-  }
-
   #title {
     text-align: left;
   }
 
-  #work {
-    padding: 10px;
-  }
 
   .projectcontainer {
     padding: 0 80px;
@@ -630,12 +888,15 @@ Large devices (1024px or larger)
   }
 
   nav {
-    padding: 20px 70px 0 150px;
+    padding: 0px 50px 0 150px;
   }
 
-.planesvg {
-  display: block;
-}
+  .logo {
+    top: 2%;
+    max-width: 120px;
+    padding-left: 10px;
+    text-align: left;
+  }
 
 .sqare {
   display: block;
@@ -679,7 +940,7 @@ Large devices (1024px or larger)
 }
 
 #love {
-padding: 0 420px 0 420px;
+padding: 0 220px 0 220px;
 }
 
 }
@@ -689,12 +950,30 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
 
+  .scroll-downn {
+  top: 18rem;
+  }
+
   body {
     font-size: 23px;
   }
 
+  .logo {
+    max-width: 150px;
+    padding-left: 10px;
+    text-align: left;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+  }
+
 #work {
-  padding: 150px;
+  padding: 0 150px;
 }
 
 .projects {
@@ -733,12 +1012,25 @@ padding: 0 550px 0 550px;
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+
+  .scroll-downn {
+  top: 25rem;
+  }
+
+  #herodescription {
+    margin-bottom: 250px;
+  }
+
+  #hero {
+    padding: 50px 0 10px 0;
+  }
+
   body {
-    font-size: 30px;
+    font-size: 25px;
   }
 
 nav > ul > li > a {
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .logo {
@@ -757,7 +1049,7 @@ nav > ul > li > a {
 }
 
 #work {
-  padding: 100px 250px 250px 250px;
+  padding: 0 300px;
 }
 
 .ctn {
@@ -822,7 +1114,7 @@ nav > ul > li > a {
 }
 
 #love {
-padding: 0 760px 0 760px;
+padding: 0 960px 0 960px;
 }
 
 .projects {
