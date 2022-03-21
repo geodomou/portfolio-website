@@ -392,6 +392,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /**grid-row-gap: 30px;**/
 
   height: 100%;
   width: 50%;
@@ -651,6 +652,7 @@ nav {
 
   .nav-links {
     position: fixed;
+    padding-top:
     top: 0;
     left: 0;
     z-index: 10;
