@@ -600,7 +600,7 @@ main ul li {
 .containersoma {
   background-color: white;
   color: #193441;
-  padding: 230px;
+  padding: 10px;
 }
 
 .iterations {
@@ -941,6 +941,10 @@ Large devices (1024px or larger)
 
 #love {
 padding: 0 220px 0 220px;
+}
+
+.containersoma {
+  padding: 230px;
 }
 
 }
