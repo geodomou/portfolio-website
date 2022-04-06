@@ -1,4 +1,5 @@
-console.log("Hello and welcome to my Portfolio. :)")
+/*jshint esversion: 6 */
+console.log("Hello and welcome to my Portfolio. :)");
 
 
 
